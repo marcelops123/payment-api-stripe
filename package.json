@@ -1,0 +1,21 @@
+{
+  "name": "payment-api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@prisma/studio": "^0.505.0",
+    "express": "^4.21.2",
+    "prisma": "^6.2.1"
+  }
+}
