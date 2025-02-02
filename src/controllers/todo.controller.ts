@@ -17,7 +17,7 @@ export const createTodoController = async (request: Request, response: Response)
         response.status(404).send({ error: "Não autorizado" });
     }
 
-    if(user !== null) {
+    if(user) {
         
         const todo = await prisma.todo.create({
             data: {
